@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,334 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap');
+:root{
+  --primary-color: #fa6d4a;
+  --secondary-color: #fbb458;
+  --tertiary-color: #b3426a;
+  --accent1: #000000;
+  --accent2:#fbe7f0;
+}
+body{
+  color: var(--tertiary-color);
+  font-family: 'Open Sans', sans-serif;
+  
+ }
+
+/*  HEADER STYLE  */   
+header {
+  padding: 20px 35px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+}   
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+header ul {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style:none;
+}
+header ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header ul li a:hover {
+  background: var(--primary-color);
+  color:  var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+/*  END HEADER */
+
+/*  HERO STYLE */    
+.hero{
+  background-image: url("../images/sunset.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;    
+}
+.hero-img{
+  flex: 0 40%;
+  /*margin: .5%;*/
+  
+}
+.hero-img img{
+  width: 50%;
+  overflow: auto;
+  border: solid 3px var(--secondary-color);
+  /*margin-left: 25px;*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.hero-name{
+  width: 100%;
+  font-family:'Yellowtail', cursive;
+  font-size: 325%;
+  color:var(--primary-color);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+ 
+}.hero-tag{
+  width: 100%;
+  text-align: right;
+  margin: 3.5%;
+  color: var(--accent2);
+  font-size: 130%;
+  line-height: 1.2;
+  justify-content: right;
+}
+/* END HERO */
+
+/* MAIN SECTION STYLE  */
+.flex-row {
+  display: flex;
+  }
+main{
+  background: hsla(12, 95%, 64%, 1);
+
+background: linear-gradient(90deg, hsla(12, 95%, 64%, 1) 0%, hsla(34, 95%, 66%, 1) 50%, hsla(339, 46%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(12, 95%, 64%, 1) 0%, hsla(34, 95%, 66%, 1) 50%, hsla(339, 46%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(12, 95%, 64%, 1) 0%, hsla(34, 95%, 66%, 1) 50%, hsla(339, 46%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#fa6d4a", endColorstr="#fbb458", GradientType=1 );
+}
+section{
+  padding: 60px;
+}
+.section-title{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: left; 
+  font-size: 200%;
+  color:var(--secondary-color);
+  text-align: left;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  
+}
+
+/* BIOGRAPHY */
+.bio{
+  width:100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bio p{
+  color:var(--accent1);
+  line-height: 1.7;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/* BODY OF WORK */
+#body-of-work{
+  flex-wrap: wrap;
+}
+.work-sample{
+  width:70%;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.sample:first-child{
+  flex: initial;
+}
+.sample{
+  overflow: auto;
+  line-height: 1.5;
+  margin: 10px;
+  background:var(--secondary-color);
+  color:var(--primary-color);
+  flex: 0 30%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  }
+.sample img{
+  width:100%;
+  overflow: auto;
+}
+.sample-title{
+  padding-left: 5px;
+  font-size: 130%;
+  color:var(--accent1);
+}
+
+.sample-skill{
+  padding-left: 5px;
+  font-family:'Yellowtail', cursive;
+  font-weight: lighter;
+  color:var(--accent2);
+  font-size:150%;
+  margin-bottom: 15px;
+}
+.sample-level{
+  padding-left: 5px;
+  font-size: 100%;
+  margin-bottom: 10px;;
+}
+
+#contact-me h2{
+  color:var(--secondary-color);
+}
+.contact-info{
+  display: flex;
+  flex-direction:row;
+  align-items: start;
+  margin: auto;
+}
+.link{ 
+  padding: 5%;
+}
+.contact-info h3{
+  color:var(--accent2);
+  font-size: 32px;
+  font-family:'Yellowtail', cursive;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.contact-info a{
+  margin:20px 0;
+  line-height:1.5;
+  font-size:16px;
+  font-style:normal;
+  color:var(--accent1);
+}
+/* END MAIN */
+
+/*  FOOTER STYLE  */
+footer {
+  background: var(--primary-color);
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer h2{
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin: 0;
+}
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+/* END FOOTER */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
+@media screen and (max-width:980px) {
+  header{
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+  }
+
+  header ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+  }
+
+  header ul li a{
+      font-size: 20px;
+  }
+
+  .hero-name, .hero-tag {
+      width: 100%;
+  }
+
+  .hero-name {
+      text-align: center;
+  }
+
+  .section-title {
+      width: 100%;
+  }
+
+  .bio p{
+      text-align: left;
+      margin-left: 5%;
+  }
+  .sample {
+      flex: 0 40%;
+      justify-content: center;
+  }
+  .contact-info{
+      margin: 0;
+  }
+  #contact-me h3{
+      flex: 0 55%;
+  }
+
+  footer h2, footer div {
+      text-align: center;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .biography {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .sample {
+      flex: 0 100%;
+      justify-content: center;
+  }
+
+  .contact-info {
+      flex-direction: column;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .section-title {
+      width: 95%;
+  }
+
+  .contact-info {
+      text-align: center;
+  }
+  .hero-img img{
+      width:100%;
+  }
+  
+  
+}    
