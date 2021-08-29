@@ -42,14 +42,17 @@ function ContactForm() {
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
+          <br></br>
           <input type="text" name="Name" defaultValue={name} onBlur={handleChange} />
         </div>
         <div>
           <label htmlFor="email">Email Address:</label>
+          <br></br>
           <input type="email" name="Email" defaultValue={email} onBlur={handleChange} />
         </div>
         <div>
           <label htmlFor="message">Message:</label>
+          <br></br>
           <textarea name="Message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (

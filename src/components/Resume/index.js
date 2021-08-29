@@ -1,4 +1,5 @@
 import React from 'react';
+import currentResume from '../../assets/files/ESherrowCV.docx'
 
 function Resume() {
   return (
@@ -6,7 +7,7 @@ function Resume() {
       <h1 id="resume">Resume</h1>
         <div className="my-2">
         <p>
-          Download my <a href="/src/assets/files/ESherrowCV.docx" download><span>resume</span></a>.
+          Download my <a href={currentResume} download><span>resume</span></a>.
         </p>
         <p>
           Front End Proficiencies

@@ -5,10 +5,10 @@ main {
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap');
 :root {
-  --primary: #fa6d4a;;
-  --secondary: #fbb458;
-  --tertiary: #b3426a;
-  --light: #fbe7f0;
+  --primary: #c2e3f4;
+  --secondary: #efb730;
+  --tertiary: #030305;
+  --light: #ffffff;
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
@@ -263,4 +263,8 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+footer{
+  background-color: #c2e3f4;
 }

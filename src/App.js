@@ -50,9 +50,9 @@ function App() {
       </main>
       <footer className="row">
         <div className="col-sm-4 mb-5"></div>
-        <div className="col-sm-4 mb-5">
-          <a href="http://www.linkedin.com/in/elizabeth-sherrow" target="_blank"><img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png" alt="LinkedIn Logo" style={{width:"42px", height:"42px"}}></img></a>
-          <a href="http://https://github.com/esherrow" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG19.png" alt="GitHub Logo" style={{width:"42px", height:"42px"}}></img></a>
+        <div className="col-sm-4 mb-5 mt-3">
+          <a href="http://www.linkedin.com/in/elizabeth-sherrow" target="_blank"><img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png" alt="LinkedIn Logo" style={{width:"42px", height:"42px",marginRight:"42px"}}></img></a><a></a>
+          <a href="http://github.com/esherrow" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG19.png" alt="GitHub Logo" style={{width:"42px", height:"42px", marginRight:"42px"}}></img></a><a></a>
           <a href="http://www.linkedin.com/in/elizabeth-sherrow" target="_blank"><img src="https://pngimg.com/uploads/twitter/twitter_PNG7.png" alt="Twitter Logo" style={{width:"42px", height:"42px"}}></img></a>
         </div>
         <div className="col-sm-4 mb-5"></div></footer>
