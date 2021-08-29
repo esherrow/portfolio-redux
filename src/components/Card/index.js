@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -19,10 +19,38 @@ const useStyles = makeStyles({
 
 export default function MediaCard() {
   const classes = useStyles();
+  const [currentProject, setCurrentProject]= useState();
+  const [projects]=useState([
+      {
+        name:'Budget Tracker',
+        repo:'',
+        site:''
+      },{
+        name:'Just Music',
+        repo:'',
+        site:''  
+      },{
+        name:'Password Generator',
+        repo:'',
+        site:''  
+      },{
+        name:'Weather Dashboard',
+        repo:'',
+        site:''  
+      },{
+        name:'Th TECH Blog',
+        repo:'',
+        site:''  
+      },{
+        name:'Workday Scheduler',
+        repo:'',
+        site:''  
+      }
+  ]);
 
   return (
       <div className="col-sm-4 mb-5">
-    <Card className={classes.root}>
+        <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -33,20 +61,18 @@ export default function MediaCard() {
           <Typography gutterBottom variant="h5" component="h2">
             Lizard
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          See it in Action
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          See the Code
         </Button>
       </CardActions>
-    </Card></div>
+    </Card>
+
+    </div>
   );
 }
