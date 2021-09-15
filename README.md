@@ -10,8 +10,8 @@ Creating a portfolio for a webdeveloper that illustrates best practices, includi
 https://esherrow.github.io/portfolio-redux/
 
 ![Image of About Me](http://github.com/esherrow/portfolio-redux/AboutMe.JPG)
-![Image of Portfolio](http://esherrow.github.io/portfolio-redux/Portfolio.JPG)
-![Image of Resume](http://esherrow.github.io/portfolio-redux/Resume.JPG)
+![Image of Portfolio](http://github.com/esherrow/portfolio-redux/Portfolio.JPG)
+![Image of Resume](http://github.com/esherrow/portfolio-redux/Resume.JPG)
 
 
 ## Contribution
