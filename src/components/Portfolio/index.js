@@ -15,6 +15,7 @@ import Image3 from '../../assets/projects/pswdGenerator.png'
 import Image4 from '../../assets/projects/WeatherDash.JPG'
 import Image5 from '../../assets/projects/TECHblog.JPG'
 import Image6 from '../../assets/projects/WorkDaySched.JPG'
+import Image7 from '../../assets/projects/SLWarehouse.JPG'
 
 const useStyles = makeStyles({
   root: {
@@ -32,7 +33,32 @@ function Portfolio() {
     <section className="my-5">
       <h1 id="portfolio">Portfolio</h1>
     </section>
+    
     <div className="row">
+      <div className="col-sm-4 mb-5">
+          <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image={Image7}
+            title="Screenshot of Application"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              S&L Warehouse
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <a href="https://sl-warehouse.herokuapp.com/"><Button size="small" color="primary">
+            See it in Action
+          </Button></a>
+          <a href="https://github.com/esherrow/SL-warehouse"><Button size="small" color="primary">
+            See the Code
+          </Button></a>
+        </CardActions>
+      </Card>
+    </div>
       <div className="col-sm-4 mb-5">
           <Card className={classes.root}>
         <CardActionArea>
